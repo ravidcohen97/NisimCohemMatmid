@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>ניסים כהן - מתמי"ד חלוציות</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="img/מגב.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<img src="img/משמר-הגבול-3-853x480.jpg" alt="ניידת" class="topimg">
+<img src="img/road.png" alt="road" class="road">
+
+    <img src="img/מתמיד.png" alt="מתמיד" class="Matmid">
+    <img src="img/בואו.png" alt="בואו" class="matmid">
+
+<p>יחידת מתמי"ד אשכול פותחת את שעריה לקליטת מתדבים חדשים <br>
+משטרת ישראל ו מ.א.אשכול זקוקים
+ לכם בשמירה על איכות החיים וביטחון התושבים במרחב הכפרי
+
+</p>
+
+    <img src="img/Eshkol.png" alt="Eshkol" class="Eshkol">
+    <img src="img/israel_police.png" alt="Police" class="Police">
+    <img src="img/מגב.png" alt="Mgv" class="Mgv">
+
+    <div class="skills" onclick="openskills()">
+        <img src="img/קריטריונים.png" alt="skills">
+
+        
+    </div>
+    <div class="skillPopup" id="skillpop">
+        <img src="img/קריטריונים.png" alt="need" class="insideSkills">
+        <img src="img/cancel.png" alt="cancel" class="cancel" onclick="closePops()">
+      
+<ul>
+    <li>אזרחות ישראלית או תושב/ת קבע</li>
+    <li>בגיר/ה מגיל 21 עד 65, לאחר שירות צבאי/אזרחי/לאומי</li>
+    <li>ידיעת השפה העברית קרוא וכתוב</li>
+    <li>ללא רישום פלילי/תעבורתי/הוצאה לפועל</li>
+    <li>ללא מגבלה לנשיאת נשק</li>
+    <li>ללא מגבלה רפואית להתנדבות במשמר הגבול</li>
+    <li>אדם אשר אין במקצועו האזרחי ניגוד עניינים להתנדבותו במשטרה</li>
+    <li>מעבר ועדת קבלה</li>
+    <li>מוכן לתרום 7 שעות ברצץ או 12 שעות במצטבר בחודש</li>
+</ul>
+
+    </div>
+
+    <div class="needs" onclick="openneed()">
+        <img src="img/הכשרה.png" alt="need">
+
+        
+    </div>
+
+    <div class="needPopup" id="needpop">
+        <img src="img/הכשרה.png" alt="need" class="insideNeeds">
+        <img src="img/cancel.png" alt="cancel" class="cancel" onclick="closePops()">
+      
+<ul>
+    <li>קורס יעודי, 8 מפגשים בני 4 שעות</li>
+    <li>סמכויות, נהלים, קשר, נהיגה</li>
+    <li>מעבר הכשרת נשק ומטווחים</li>
+</ul>
+
+    </div>
+  <div class="warper" id="warper" onclick="closePops()"></div>
+
+
+<footer></footer>
+
+<img src="img/backcolor.jpg" alt="back top" class="backTop">
+
+<div class="icons" >
+    <img src="img/ניסים.png" alt="ניסים" class="nisim">
+
+</div>
+<div class="contact">
+    <a href="http://wa.me/972504666442" target="_blank" rel="noopener noreferrer" class="whatsapp">
+        <img src="img/whatsapp.png" alt="whatsapp"></a>
+    <a href="tel:+972504666442" class="tel"><img src="img/call.png" alt="call"></a>
+</div>
+</body>
+
+<script>
+
+    function closePops(){
+        let warper = document.getElementById("warper");
+        let needpop = document.getElementById("needpop");
+        let skillpop = document.getElementById("skillpop");
+
+        warper.style.display="none";
+        needpop.style.display="none";
+        skillpop.style.display="none";
+
+
+console.log(warper, needpop, skillpop)
+    };
+
+    function openneed(){
+        let pop = document.getElementById("needpop");
+        let warper = document.getElementById("warper");
+
+        warper.style.display="block";
+        pop.style.display="block";
+        console.log(pop, warper);
+    }
+
+
+    function openskills(){
+        let pop =  document.getElementById("skillpop");
+        let warper = document.getElementById("warper");
+
+        warper.style.display="block";
+        pop.style.display="block";
+        console.log(pop, warper);
+    }
+    </script>
+</html>
